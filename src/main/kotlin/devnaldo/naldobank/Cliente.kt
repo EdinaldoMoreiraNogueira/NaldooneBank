@@ -1,13 +1,7 @@
 package devnaldo.naldobank
 
-class Cliente {
-    var name: String = "Edinaldo"
-    var cpf: String = "123.123.123.88"
-}
+abstract class Cliente (
+    open val name: String,
+    open val cpf: String,
 
-fun main(){
-    val edinaldo = Cliente()
-
-    println(edinaldo.name)
-    println(edinaldo.cpf)
-}
+)
